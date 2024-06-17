@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>EcoFuction Tech</title>
+  </head>
+  <body>
+    <div class="container" id="nav-container">
+      <div class="header">
+        <img
+          src="src/icones/logoHorizontal.svg"
+          alt="Logo da empresa"
+          class="logo"
+        />
+        <ul class="menu">
+          <a href="#"><li class="itensMenu">Início</li></a>
+          <a href="#sobre"><li class="itensMenu">Sobre</li></a>
+          <a href="#projetos"><li class="itensMenu">Projetos</li></a>
+          <a href="#servicos"><li class="itensMenu">Serviços</li></a>
+          <a href="#contato"><li class="itensMenu btnMenu">Contato</li></a>
+        </ul>
+
+        <img src="src/icones/menu.svg" alt="" class="menuHamburguer" onclick="menuHamburguer()">
+      </div>
+
+      <!-- INICIO -->
+      <div class="principal">
+        <div class="principalInfor hidden" >
+          <h1 class="Bemvindo">
+            Bem-Vindo(a) ao <span class="verde">E</span>cofusion
+            <span class="azul">T</span>ech
+          </h1>
+          <p class="descricaoPrincipio">
+            Tecnologia inovadora que reduz o impacto ambiental das operações
+            empresariais, promovendo práticas sustentáveis e eficiência
+            energética.
+          </p>
+          <h2 class="slogan" id="slogan"></h2>
+          <div class="btns">
+            <a href="#sobre"><button class="bntBorda">Saiba Mais</button></a>
+            <a href="#contato"><button class="btnAzul">Contato</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SOBRE -->
+      <div class="Sessaosobre" id="sobre">
+        <div class="linhaSobre"></div>
+        <div class="sobre">
+          <div class="imgsSobre">
+            <img
+              src="src/images/imageSobre.png"
+              alt="Imagem de uma mão segurando uma planta representandoa sustentabilidade"
+              class="imgSobre hidden"
+            />
+            <img
+              src="src/icones/iconSobre.svg"
+              alt="Icone de um coraçao que na verdade são duas mãos juntas representando a sustentabilidade"
+              class="iconSobre hidden"
+            />
+          </div>
+          <div class="textoSobre hidden">
+            <h1 class="titleSobre">
+              Sobre a <span class="verde">Empresa</span>
+            </h1>
+            <p class="descricaoSobre">
+              A EcoFusion Tech é uma startup que se dedica a criar soluções
+              tecnológicas que ajudam empresas a integrar práticas sustentáveis
+              em suas operações diárias.
+            </p>
+            <p class="descricaoSobre">
+              Fundada em 2023, a EcoFusion Tech se destaca por combinar
+              expertise em tecnologia e sustentabilidade para oferecer produtos
+              e serviços que não apenas melhoram a eficiência energética, mas
+              também promovem um futuro mais verde.
+            </p>
+            <button class="btnAzul">Contato</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJETOS -->
+      <div class="projetosSessao" id="projetos">
+        <div class="backgroundAzul">
+          <h1>Projetos</h1>
+        </div>
+        <div class="projetos">
+          <div class="projeto hidden">
+            <img
+              src="src/images/imagemProjeto01.png"
+              alt=""
+              class="imgProjeto"
+            />
+            <div class="textoProjetos">
+              <h4 class="tituloProjeto">
+                Dispositivos Inteligentes para Agricultura Sustentável
+              </h4>
+              <p class="descricaoProjeto">
+                Em parceria com a FreshFields Organic Farms, a EcoFusion Tech
+                desenvolveu e implementou dispositivos inteligentes para
+                monitoramento e automação de processos agrícolas.
+              </p>
+              <div class="beneficios">
+                <div class="beneficio">
+                  <img
+                    src="src/icones/certo.svg"
+                    alt="icone de certo"
+                    class="iconCerto"
+                  />
+                  <p class="beneficiosProjeto">Aumento da produtividade</p>
+                </div>
+                <div class="beneficio">
+                  <img
+                    src="src/icones/certo.svg"
+                    alt="icone de certo"
+                    class="iconCerto"
+                  />
+                  <p class="beneficiosProjeto">Redução de desperdícios</p>
+                </div>
+                <div class="beneficio">
+                  <img
+                    src="src/icones/certo.svg"
+                    alt="icone de certo"
+                    class="iconCerto"
+                  />
+                  <p class="beneficiosProjeto">Dados em tempo real</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projeto hidden">
+            <img
+              src="src/images/imagemProjeto02.png"
+              alt=""
+              class="imgProjeto"
+            />
+            <div class="textoProjetos">
+              <h4 class="tituloProjeto">
+                Projeto Piloto de Energia Solar em Escola Pública
+              </h4>
+              <p class="descricaoProjeto">
+                Pojeto piloto para a instalação de painéis solares na Sunlight
+                Elementary School, visando promover a sustentabilidade e educar
+                os alunos sobre energias renováveis.
+              </p>
+              <div class="beneficios">
+                <div class="beneficio">
+                  <img
+                    src="src/icones/certo.svg"
+                    alt="icone de certo"
+                    class="iconCerto"
+                  />
+                  <p class="beneficiosProjeto">Redução de custos de energia</p>
+                </div>
+                <div class="beneficio">
+                  <img
+                    src="src/icones/certo.svg"
+                    alt="icone de certo"
+                    class="iconCerto"
+                  />
+                  <p class="beneficiosProjeto">Educação ambiental</p>
+                </div>
+                <div class="beneficio">
+                  <img
+                    src="src/icones/certo.svg"
+                    alt="icone de certo"
+                    class="iconCerto"
+                  />
+                  <p class="beneficiosProjeto">Exemplo comunitário</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projeto hidden">
+            <img
+              src="src/images/imagemProjeto03.png"
+              alt=""
+              class="imgProjeto"
+            />
+            <div class="textoProjetos">
+              <h4 class="tituloProjeto">
+                Dispositivos Inteligentes para Agricultura Sustentável
+              </h4>
+              <p class="descricaoProjeto">
+                Em parceria com a FreshFields Organic Farms, a EcoFusion Tech
+                desenvolveu e implementou dispositivos inteligentes para
+                monitoramento e automação de processos agrícolas.
+              </p>
+              <div class="beneficios">
+                <div class="beneficio">
+                  <img
+                    src="src/icones/certo.svg"
+                    alt="icone de certo"
+                    class="iconCerto"
+                  />
+                  <p class="beneficiosProjeto">Aumento da produtividade</p>
+                </div>
+                <div class="beneficio">
+                  <img
+                    src="src/icones/certo.svg"
+                    alt="icone de certo"
+                    class="iconCerto"
+                  />
+                  <p class="beneficiosProjeto">Redução de desperdícios</p>
+                </div>
+                <div class="beneficio">
+                  <img
+                    src="src/icones/certo.svg"
+                    alt="icone de certo"
+                    class="iconCerto"
+                  />
+                  <p class="beneficiosProjeto">Dados em tempo real</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- SERVIÇOS -->
+      <div class="servicos" id="servicos">
+        <h1 class="tituloServicos">Produtos e Serviços</h1>
+
+        <ul class="tdsCtg" id="tdsCtg">
+          <li class="ctg active" onclick="filterSelection('all')">Todos</li>
+          <li class="ctg" onclick="filterSelection('software')">Softwares</li>
+          <li class="ctg" onclick="filterSelection('conscientizacao')">
+            Conscientizaçao
+          </li>
+          <li class="ctg" onclick="filterSelection('utilizados')">
+            Mais Utilizados
+          </li>
+        </ul>
+        <div class="todasCg hidden">
+
+          <div class="cardCtg software utilizados">
+            <img
+              src="src/icones/produtoIcon01.svg"
+              alt="icone do serviço disponibilizado"
+              class="iconCtg"
+            />
+            <h4 class="tituloCtg">Software de Gerenciamento de Energia</h4>
+            <p class="descricaoCtg">
+              <strong>EcoManager: </strong>Plataforma que permite às empresas
+              monitorar e otimizar o consumo de energia em tempo real,
+              identificando áreas de desperdício e oportunidades de economia.
+            </p>
+          </div>
+          <div class="cardCtg utilizados">
+            <img
+              src="src/icones/produtoIcon02.svg"
+              alt="icone do serviço disponibilizado"
+              class="iconCtg"
+            />
+            <h4 class="tituloCtg">Consultoria em Sustentabilidade</h4>
+            <p class="descricaoCtg">
+              <strong>EcoConsult: </strong>Serviços personalizados que ajudam
+              empresas a desenvolver estratégias de sustentabilidade,
+              implementar práticas verdes e obter certificações ambientais.
+            </p>
+          </div>
+
+          <div class="cardCtg software">
+            <img
+              src="src/icones/produtoIcon04.svg"
+              alt="icone do serviço disponibilizado"
+              class="iconCtg"
+            />
+            <h4 class="tituloCtg">Educação e Treinamento</h4>
+            <p class="descricaoCtg">
+              <strong>EcoAcademy: </strong>Programas de treinamento e workshops
+              para empresas e seus funcionários sobre práticas sustentáveis e
+              uso eficiente de recursos.
+            </p>
+          </div>
+       
+          <div class="cardCtg utilizados">
+            <img
+              src="src/icones/produtoIcon03.svg"
+              alt="icone do serviço disponibilizado"
+              class="iconCtg"
+            />
+            <h4 class="tituloCtg">Produtos Tecnológicos Eco-friendly</h4>
+            <p class="descricaoCtg">
+              <strong>EcoDevices: </strong>Linha de dispositivos inteligentes,
+              como sensores de energia e sistemas de automação, que auxiliam na
+              redução do consumo de recursos naturais.
+            </p>
+          </div>
+          <div class="cardCtg conscientizacao">
+            <img
+              src="src/icones/produtoIcon05.svg"
+              alt="icone do serviço disponibilizado"
+              class="iconCtg"
+            />
+            <h4 class="tituloCtg">Plataforma de Monitoramento de Carbono</h4>
+            <p class="descricaoCtg">
+              <strong>EcoCarbon Tracker: </strong>plataforma que permite às
+              empresas monitorar e gerenciar suas emissões de carbono.
+              Utilizando sensores e análises em tempo real.
+            </p>
+          </div>
+          <div class="cardCtg conscientizacao utilizados">
+            <img
+              src="src/icones/produtoIcon06.svg"
+              alt="icone do serviço disponibilizado"
+              class="iconCtg"
+            />
+            <h4 class="tituloCtg">Soluções de Iluminação Inteligente</h4>
+            <p class="descricaoCtg">
+              <strong>EcoLight Smart Solutions: </strong>oferece sistemas de
+              iluminação inteligente que não apenas economizam energia, mas
+              também melhoram a qualidade do ambiente de trabalho.
+            </p>
+          </div>
+ 
+        </div>
+      </div>
+
+      <!--MISSAO-->
+      <div class="Sessaomissao">
+        <div class="cardsMissao hidden">
+          <div class="cardMissao">
+            <h1 class="titleMissao verde">Visão:</h1>
+            <p class="descricaiMissao">
+              Ser líder global em soluções tecnológicas sustentáveis,
+              capacitando empresas a operar de forma eficiente e ecologicamente
+              responsável.
+            </p>
+          </div>
+          <div class="cardMissao">
+            <h1 class="titleMissao azul">Missão:</h1>
+            <p class="descricaiMissao">
+              Desenvolver e fornecer tecnologia inovadora que reduz o impacto
+              ambiental das operações empresariais, promovendo práticas
+              sustentáveis e eficiência energética.
+            </p>
+          </div>
+        </div>
+        <div class="imagemMissao hidden">
+          <img
+            src="src/images/imagemMissao.png"
+            alt="Uma equipe trabalhando em uma mesa com vários notebooks ao redor da mesa"
+            class="imgMissao"
+          />
+        </div>
+      </div>
+      <!--CONTATO-->
+      <div class="sessaoContato" id="contato">
+        <div class="contatoTotal">
+          <div class="vantagens">
+            <h1>Porque Escolher a EcoFusion Tech:</h1>
+            <div class="motivos">
+              <div class="motivo hidden">
+                <img src="src/icones/certo.svg" alt="icone de certo" />
+                <p class="decricaoMotivo">
+                  <strong>Tecnologia de Ponta: </strong>Utilizamos as mais
+                  recentes tecnologias para desenvolver soluções avançadas e
+                  eficazes.
+                </p>
+              </div>
+              <div class="motivo hidden">
+                <img src="src/icones/certo.svg" alt="icone de certo" />
+                <p class="decricaoMotivo">
+                  <strong>Impacto Ambiental Positivo: </strong>Promovemos o uso
+                  eficiente dos recursos naturais e incentivamos práticas
+                  empresariais ecológicas.
+                </p>
+              </div>
+              <div class="motivo hidden">
+                <img src="src/icones/certo.svg" alt="icone de certo" />
+                <p class="decricaoMotivo">
+                  <strong>Consultoria Especializada: </strong>Serviços de
+                  consultoria adaptados às necessidades específicas de cada
+                  cliente.
+                </p>
+              </div>
+              <div class="motivo hidden">
+                <img src="src/icones/certo.svg" alt="icone de certo" />
+                <p class="decricaoMotivo">
+                  <strong>Responsabilidade Social: </strong>Compromisso com
+                  práticas sustentáveis contribui para a responsabilidade social
+                  corporativa.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="contato hidden">
+            <h1 class="tituloContato azul">Contato</h1>
+            <form action="" method="POST">
+              <label>Nome</label>
+              <input type="text" placeholder="Nome" class="inputs" />
+              <label>Email</label>
+              <input
+                type="email"
+                placeholder="Exemplo@gmail.com"
+                class="inputs"
+              />
+              <label>Telefone</label>
+              <input
+                type="cellphone"
+                placeholder="(99) 9999-9999"
+                class="inputs"
+              />
+              <label>Dúvidas/Comentários</label>
+              <textarea placeholder="Escreva aqui"></textarea>
+              <input type="submit" value="Enviar" class="btnAzul btnForm" />
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!--RODAPE-->
+      <div class="sessaoRodape">
+        <div class="rodape">
+          <div class="infoLogo">
+            <img src="src/icones/logoHorizontalPB.svg"  class="logoEmpresa" alt="Logo da empresa" />
+            <p class="descricaoLogo">
+              A EcoFusion Tech é uma startup que se dedica a criar soluções
+              tecnológicas que ajudam empresas a integrar práticas sustentáveis
+              em suas operações diárias.
+            </p>
+            <div class="icones">
+              <img src="src/icones/facebook.svg" alt="icone facebook" />
+              <img src="src/icones/instagram.svg" alt="icone instagram" />
+              <img src="src/icones/linkdin.svg" alt="icone linkedin" />
+            </div>
+          </div>
+          <div class="infoEmpresa">
+            <h3>Informações</h3>
+            <p class="inforsEmpresa">Contato@gmail.com</p>
+            <p class="inforsEmpresa">(99) 9999-9999</p>
+            <p class="inforsEmpresa">Localizacao - da empresa</p>
+          </div>
+          <div class="newsletter">
+            <h3>NewsLetter</h3>
+            <p>Assine nossa NewsLetter para ficar por dentro  de  todas as novidades da empresa</p>
+            <form action="">
+              <input type="text" placeholder="Digite seu Email aqui" class="newsletterInput">
+              <input type="submit" value="Inscrever-se" class="newsletterBtn">
+            </form>
+          </div>
+        </div>
+        <div class="inforsDev">
+        <p class="inforDev">EcoFusion Tech © 2024. Todos os direitos reservados.</p>
+        <p class="inforDev">Desegn e desenvolvimento por SabrinaDamasceno</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@latest/dist/core.js"></script>
+  <script src="script.js"></script>
+</html>

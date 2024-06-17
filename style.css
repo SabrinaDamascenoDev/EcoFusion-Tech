@@ -1,0 +1,668 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/*MENU*/
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 8%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10%;
+  margin-right: 8%;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #12941f;
+  transition: 0.2s;
+}
+
+.itensMenu {
+  list-style: none;
+  cursor: pointer;
+}
+
+.btnMenu {
+  padding: 0.15rem 1.5rem;
+  background-color: #1e68d8;
+  color: white;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.btnMenu:hover {
+  background-color: #12941f;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.menuHamburguer {
+  display: none;
+  width: 20px;
+  height: 20px;
+ 
+  cursor: pointer;
+}
+/*INICIO*/
+
+.principal {
+  width: 84%;
+  margin: 0;
+  height: 30rem;
+  background-image: url("src/images/backgroundImage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px 8%;
+  color: white;
+}
+
+.verde {
+  color: #12941f;
+}
+
+.azul {
+  color: #1e68d8;
+}
+
+.principal h2 {
+  color: #12941f;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.bntBorda {
+  padding: 0.7rem 2rem;
+  border: 1px solid #1e68d8;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.bntBorda:hover {
+  background-color: #1e68d8;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btnAzul {
+  padding: 0.7rem 2rem;
+  border: 1px solid transparent;
+  background-color: #1e68d8;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.btnAzul:hover {
+  background-color: transparent;
+  border: 1px solid #1e68d8;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.descricaoPrincipio {
+  width: 40%;
+  font-size: 13px;
+}
+
+.principalInfor {
+  margin-top: 11%;
+}
+
+/* SOBRE */
+
+.sobre {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 8%;
+  margin-top: 5%;
+  margin-bottom: 4%;
+  justify-content: space-between;
+  gap: 3%;
+}
+
+.imgsSobre {
+  display: flex;
+  flex-direction: row;
+}
+
+.iconSobre {
+  width: 60px;
+  position: relative;
+  bottom: 25%;
+  right: 5%;
+}
+
+.linhaSobre {
+  width: 20%;
+  position: absolute;
+  left: 40%;
+  height: 20%;
+  border-top: 1px solid #12941f;
+  margin-top: 0.5%;
+}
+.descricaoSobre {
+  width: 90%;
+  font-size: 17px;
+}
+
+.sobre .btnAzul:hover {
+  background-color: transparent;
+  border: 1px solid #1e68d8;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #1e68d8;
+}
+
+.imgSobre {
+  width: 30em;
+  height: 25em;
+}
+
+/*PROJETOS*/
+
+.projetosSessao {
+  padding-bottom: 2%;
+  text-align: center;
+}
+
+.projetos {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  padding: 28px 8%;
+}
+
+.projeto {
+  box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.3);
+  width: 30%;
+  justify-content: left;
+  text-align: left;
+  border-radius: 20px;
+  z-index: 1;
+  margin-top: 6%;
+}
+
+.textoProjetos {
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 5%;
+}
+
+.imgProjeto {
+  width: 100%;
+}
+
+.beneficiosProjeto {
+  font-size: 12px;
+  font-weight: 600;
+}
+.beneficio {
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+}
+
+.descricaoProjeto {
+  font-size: 12px;
+}
+
+.backgroundAzul {
+  background-color: #1e68d8;
+  padding: 0;
+  position: absolute;
+  height: 12em;
+  width: 100%;
+  color: white;
+}
+
+.projetosSessao .btnAzul:hover {
+  background-color: transparent;
+  border: 1px solid #1e68d8;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #1e68d8;
+}
+
+/*SERVIÇOS*/
+
+  .todasCg{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+    margin-top: 3%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+.tituloServicos {
+  color: #12941f;
+}
+.servicos {
+  justify-content: center;
+  text-align: center;
+  padding: 28px 8%;
+  align-items: center;
+}
+
+.tdsCtg {
+  display: flex;
+  flex-direction: row;
+  gap: 8%;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.ctg {
+  list-style: none;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 0.23em solid #12941f;
+}
+
+.cardCtg {
+  width: 88%;
+  height: 85%;
+  padding: 4% 2%;
+  box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  display: none;
+  margin-top: 10%;
+}
+.iconCtg{
+  margin-top: 5%;
+}
+.descricaoCtg {
+  font-size: 13px;
+}
+
+.showCtg {
+  display: block;
+}
+
+/*MISSAO*/
+
+.Sessaomissao {
+  display: flex;
+  flex-direction: row;
+  padding: 4% 8%;
+  border-top: #12941f solid 1px;
+  margin-top: 5%;
+}
+
+.cardsMissao {
+  margin-top: 3%;
+  width: 80%;
+}
+
+.cardMissao {
+  width: 70%;
+}
+
+/*CONTATO*/
+.sessaoContato {
+  padding: 28px 8%;
+}
+
+.contatoTotal {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.3);
+  padding: 3% 4%;
+  border-radius: 20px;
+}
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+  width: 25em;
+  text-align: left;
+  margin-top: 5%;
+  
+}
+
+.contato form label{
+  color: #1e68d8;
+  font-weight: 500;
+}
+
+.contato form .inputs {
+  padding: 2%;
+  border-radius: 10px;
+  border: solid 1px #1e68d8;
+  margin-top: 2%;
+}
+
+.contato form label{
+  margin-top: 2%;
+}
+.btnForm:hover {
+  color: #1e68d8;
+
+}
+
+.btnForm{
+  margin-top: 3%;
+  width: 13em;
+}
+.contato form textarea {
+  padding: 6%;
+  border-radius: 10px;
+  border: solid 1px #1e68d8;
+  margin-top: 2%;
+}
+.contato {
+  align-items: center;
+  text-align: center;
+}
+
+.motivo {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  width: 75%;
+  margin-top: 2%;
+}
+
+.vantagens h1 {
+  font-size: 20px;
+  color: #1e68d8;
+}
+.decricaoMotivo {
+  font-size: 14px;
+}
+
+.motivos {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  margin-top: 5%;
+}
+.tituloContato{
+  margin: 0;
+  padding: 0;
+}
+
+/*RODAPE*/
+
+.sessaoRodape{
+  background-color: #424242;
+  color: #898989;
+  padding: 28px 8%;
+}
+
+.rodape{
+  display: flex;
+  flex-direction: row;
+  gap: 15%;
+
+}
+
+.sessaoRodape p{
+  font-size: 12px;
+}
+
+.icones{
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+
+}
+
+.icones img{
+  cursor: pointer;
+
+}
+
+.newsletterInput{
+  width: 100%;
+  height: 2em;
+  padding-left: 5%;
+  border-radius: 7px;
+  border: solid 1px #1e68d8;
+  margin-top: 2%;
+  background-color: transparent;
+}
+
+.newsletterBtn{
+  width: 107%;
+  height: 2.2em;
+  font-weight: 600;
+  background-color: #1e68d8;
+  border-radius: 7px;
+  margin-top: 2%;
+  border: none;
+  color: white;
+}
+
+.newsletterBtn:hover{
+  background-color: #12941f;
+  transition: 0.3s;
+}
+
+.inforsDev{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: #898989 solid 1px;
+  margin-top: 3%;
+}
+
+/*SCROLL*/
+
+.hidden{
+  opacity: 0;
+  filter: blur(15px);
+  transition: all 1s;
+  transform: translateX(-100%);
+}
+.show{
+  opacity: 1;
+  filter: blur(0px);
+  transition: all 1s;
+  transform: translateX(0);
+}
+
+.projetos :nth-child(1) {
+  transition-delay: 400ms;
+}
+
+.projetos :nth-child(2) {
+  transition-delay: 700ms;
+}
+
+.projetos :nth-child(3) {
+  transition-delay: 1000ms;
+}
+
+/*RESPONSIVIDADE*/
+
+
+@media only screen and (max-width: 830px) {
+  .imgMissao{
+    display: none;
+  }
+  .contatoTotal{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .vantagens, .motivos{
+    align-items: center;
+    text-align: center;
+  }
+  .contatoTotal{
+    box-shadow: none;
+    padding-bottom: 5%;
+  }
+  .rodape{
+    flex-direction: column;
+  }
+  .imgSobre{
+    display: none;  
+  }
+
+  .Sessaomissao{
+    display: none;
+  }
+  
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    margin-right: 0;
+    position: absolute;
+    padding: 0;
+    top: 60px;
+    background-color: white;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .menu a {
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .menuHamburguer {
+    display: block;
+    margin-top: 3%;
+  }
+
+  .projetos{
+    flex-direction: column;
+    align-items: center;
+  }
+  .projeto{
+    width: 80%;
+    margin-top: 20%;
+  }
+  .todasCg{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cardCtg{
+    width: 90%;
+    height: 70%;
+    padding: 8% 4%;
+  }
+
+ 
+
+  
+
+}
+
+@media only screen and (max-width: 940px) {
+  .imgMissao{
+    display: none;
+  }
+  .descricaiMissao{
+    width: 160%;
+  }
+  
+
+}
+
+@media only screen and (max-width: 430px) {
+  .contato form{
+    width: 20em;
+  }
+
+  .principal{
+    padding: 60px 8%;
+  }
+
+  .menuHamburguer{
+    margin-top: 10%;
+  }
+  
+
+
+.principalInfor{
+  margin-top: 20%;
+}
+}
+
+
+@media only screen and (max-width: 600px) {
+  .sobre{
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .descricaoPrincipio {
+    width: 100%;
+    font-size: 13px;
+  }
+  .menuHamburguer{
+    margin-top: 5%;
+  }
+  .descricaoCtg {
+    font-size: 6px;
+  }
+  .tituloCtg{
+    font-size: 8px;
+  }
+  .iconCtg{
+    width: 10%;
+  }
+
+  .ctg{
+    font-size: 10px;
+  }
+
+  .contato form{
+    padding: 5%;
+    margin-left: 0;
+    padding-left: 0;
+
+
+  }
+  .contato{
+    padding: 0%;
+    margin-left: 0;
+    align-items: center;
+  }
+  .contatoTotal{
+    padding: 0;
+  }
+
+  .inforsDev p {
+    font-size: 6px;
+  }
+
+  .inforDev{
+    padding-top: 6%;
+  }
+}
+
