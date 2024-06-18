@@ -545,6 +545,7 @@ body {
     background-color: white;
     width: 80%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1;
   }
 
   .menu a {
@@ -606,9 +607,26 @@ body {
   }
   
 
+  .motivos{
+      width: 100%;
+  }
 
+  .motivo{
+    width: 100%;
+  }
+  .decricaoMotivo{
+    font-size: 12px;
+    margin-top: 5%;
+  }
+  .contato{
+    margin-top: 10%;
+  }
 .principalInfor{
   margin-top: 20%;
+}
+
+.projeto{
+  width: 100%;
 }
 }
 
