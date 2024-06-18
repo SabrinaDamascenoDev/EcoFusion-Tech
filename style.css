@@ -628,6 +628,10 @@ body {
 .projeto{
   width: 100%;
 }
+.tdsCtg{
+  position: relative;
+  right: 5%;
+}
 }
 
 
@@ -658,7 +662,12 @@ body {
   .ctg{
     font-size: 10px;
   }
-
+  .logo{
+    width: 50%;
+  }
+  .tituloServicos{
+    font-size: 25px;
+  }
   .contato form{
     padding: 5%;
     margin-left: 0;
