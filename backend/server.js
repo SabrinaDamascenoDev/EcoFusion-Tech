@@ -38,8 +38,4 @@ app.get('/usuarios', (req, res) => {
         4. Deletar um user
 */
 
-/* 
- user: sabrinadamasceno
- senha: q20A0iXFDqEynm8L
- */
 app.listen(8080)
