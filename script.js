@@ -11,7 +11,53 @@ typewriter.typeString('Inovação Sustentável!')
     .pauseFor(2500)
     .start();
 
+     //envio de dados para a api
 
+     const form = document.getElementById('form')
+     const nomeForm = document.getElementById('formNome')
+     const emailFrom = document.getElementById('formEmail')
+     const telefoneForm = document.getElementById('formTel')
+     const comentarioForm = document.getElementById('formComen')
+ 
+     form.addEventListener("submit", async(event) => {
+         event.preventDefault();
+ 
+         const formData = {
+             nome: nomeForm.value.trim(),
+             email: emailFrom.value.trim(),
+             telefone: telefoneForm.value.trim(),
+             comentario: comentarioForm.value.trim(),
+ 
+         }
+ 
+         if(!formData.nome || !formData.email || !formData.telefone || !formData.comentario){
+             console.error("Todos oa campos são obrigatórios!!");
+             return;
+         }
+ 
+         try{
+             const response = await fetch('http://localhost:8080/usuarios',
+ 
+                 {
+                     method: 'POST',
+                     headers: {
+                         "Content-Type": "aplication/Json",
+                     },
+                     body: JSON.stringify(formData)
+ 
+                 }
+ 
+             )
+             if(response.ok){
+                 console.log("Os dados foram enviados com sucesso!");
+             } else{
+                 console.error("Algum erro foi encontrado", responseData)
+             }
+         } catch(error){
+             console.error("Erro:", error);
+         }
+ 
+     })
     //filtro de busca
 
     filterSelection("all")

@@ -22,12 +22,17 @@
           <a href="#contato"><li class="itensMenu btnMenu">Contato</li></a>
         </ul>
 
-        <img src="src/icones/menu.svg" alt="" class="menuHamburguer" onclick="menuHamburguer()">
+        <img
+          src="src/icones/menu.svg"
+          alt=""
+          class="menuHamburguer"
+          onclick="menuHamburguer()"
+        />
       </div>
 
       <!-- INICIO -->
       <div class="principal">
-        <div class="principalInfor hidden" >
+        <div class="principalInfor hidden">
           <h1 class="Bemvindo">
             Bem-Vindo(a) ao <span class="verde">E</span>cofusion
             <span class="azul">T</span>ech
@@ -217,7 +222,6 @@
             </div>
           </div>
         </div>
-        
       </div>
 
       <!-- SERVIÇOS -->
@@ -235,7 +239,6 @@
           </li>
         </ul>
         <div class="todasCg hidden">
-
           <div class="cardCtg software utilizados">
             <img
               src="src/icones/produtoIcon01.svg"
@@ -276,7 +279,7 @@
               uso eficiente de recursos.
             </p>
           </div>
-       
+
           <div class="cardCtg utilizados">
             <img
               src="src/icones/produtoIcon03.svg"
@@ -316,7 +319,6 @@
               também melhoram a qualidade do ambiente de trabalho.
             </p>
           </div>
- 
         </div>
       </div>
 
@@ -390,23 +392,30 @@
           </div>
           <div class="contato hidden">
             <h1 class="tituloContato azul">Contato</h1>
-            <form action="" method="POST">
+            <form action="" method="POST" id="form">
               <label>Nome</label>
-              <input type="text" placeholder="Nome" class="inputs" />
+              <input
+                type="text"
+                placeholder="Nome"
+                class="inputs"
+                id="formNome"
+              />
               <label>Email</label>
               <input
                 type="email"
                 placeholder="Exemplo@gmail.com"
                 class="inputs"
+                id="formEmail"
               />
               <label>Telefone</label>
               <input
                 type="cellphone"
                 placeholder="(99) 9999-9999"
                 class="inputs"
+                id="formTel"
               />
               <label>Dúvidas/Comentários</label>
-              <textarea placeholder="Escreva aqui"></textarea>
+              <textarea placeholder="Escreva aqui" id="formComen"></textarea>
               <input type="submit" value="Enviar" class="btnAzul btnForm" />
             </form>
           </div>
@@ -417,7 +426,11 @@
       <div class="sessaoRodape">
         <div class="rodape">
           <div class="infoLogo">
-            <img src="src/icones/logoHorizontalPB.svg"  class="logoEmpresa" alt="Logo da empresa" />
+            <img
+              src="src/icones/logoHorizontalPB.svg"
+              class="logoEmpresa"
+              alt="Logo da empresa"
+            />
             <p class="descricaoLogo">
               A EcoFusion Tech é uma startup que se dedica a criar soluções
               tecnológicas que ajudam empresas a integrar práticas sustentáveis
@@ -437,16 +450,25 @@
           </div>
           <div class="newsletter">
             <h3>NewsLetter</h3>
-            <p>Assine nossa NewsLetter para ficar por dentro  de  todas as novidades da empresa</p>
+            <p>
+              Assine nossa NewsLetter para ficar por dentro de todas as
+              novidades da empresa
+            </p>
             <form action="">
-              <input type="text" placeholder="Digite seu Email aqui" class="newsletterInput">
-              <input type="submit" value="Inscrever-se" class="newsletterBtn">
+              <input
+                type="text"
+                placeholder="Digite seu Email aqui"
+                class="newsletterInput"
+              />
+              <input type="submit" value="Inscrever-se" class="newsletterBtn" />
             </form>
           </div>
         </div>
         <div class="inforsDev">
-        <p class="inforDev">EcoFusion Tech © 2024. Todos os direitos reservados.</p>
-        <p class="inforDev">Desegn e desenvolvimento por SabrinaDamasceno</p>
+          <p class="inforDev">
+            EcoFusion Tech © 2024. Todos os direitos reservados.
+          </p>
+          <p class="inforDev">Desegn e desenvolvimento por SabrinaDamasceno</p>
         </div>
       </div>
     </div>
