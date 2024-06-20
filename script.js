@@ -13,10 +13,10 @@ typewriter.typeString('Inovação Sustentável!')
 
      //envio de dados para a api
      const form = document.getElementById('form');
-const nomeForm = document.getElementById('formNome');
-const emailForm = document.getElementById('formEmail');
-const telefoneForm = document.getElementById('formTel');
-const comentarioForm = document.getElementById('formComen');
+    const nomeForm = document.getElementById('formNome');
+    const emailForm = document.getElementById('formEmail');
+    const telefoneForm = document.getElementById('formTel');
+    const comentarioForm = document.getElementById('formComen');
 
 form.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -44,6 +44,8 @@ form.addEventListener("submit", async (event) => {
 
         if (response.ok) {
             console.log("Os dados foram enviados com sucesso!");
+            alert("deu certo")
+            location.reload()
         } else {
             console.error("Algum erro foi encontrado", await response.json());
         }
